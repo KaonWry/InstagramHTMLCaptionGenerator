@@ -1,13 +1,13 @@
-function jalankan()=
+function jalankan()
 	{
-	var captions = document.getElementById("judul").value; 								//Get captions
-	//var days = document.getElementById("hari").value; 									Unused, I'm using automation now
-	var sauce = document.getElementById("sumber").value;									//Get the source
+	var captions = document.getElementById("judul").value; 					//Get captions
+	//var days = document.getElementById("hari").value; 					Unused, I'm using automation now
+	var sauce = document.getElementById("sumber").value;					//Get the source
 	var datenow = new Date();																		//Get today's date
 	var daynow = Math.round((datenow.getTime() / (1000 * 60 * 60 * 24)));			//Count the nearest rounding of the today's milliseconds
-	var datepast = new Date(2021, 1, 14);														//Get 1st post date
+	var datepast = new Date(2021, 1, 14);							//Get 1st post date
 	var daypast = Math.round((datepast.getTime() / (1000 * 60 * 60 * 24)));			//Count the nearest rounding of the 1st post's milliseconds
-	var dayspan = daynow - daypast;																//Get the timespan in days
+	var dayspan = daynow - daypast;								//Get the timespan in days
 	var thecaptions
 	if ( captions.length == 0 && sauce.length == 0 ) 
 	{
