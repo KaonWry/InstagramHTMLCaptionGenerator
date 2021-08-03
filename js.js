@@ -56,10 +56,9 @@ function runcopy(idName)
 	
 	document.getElementById("writeResult").innerHTML = writeCaption				//Write the caption made
 	
-	var el = document.createElement('textarea');
-	el.value = copyCaption														
-	document.body.appendChild(el);												
-	el.select();																//Command to copy the written caption
+	var selecting = document.createElement('textarea');
+	selecting = copyCaption														
+	document.body.appendChild(selecting);												
+	selecting.select();																//Command to copy the written caption
 	document.execCommand('copy');												
-	document.body.removeChild(el);												
-	}
+	document.body.removeChild(selecting);}
