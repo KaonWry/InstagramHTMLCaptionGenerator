@@ -1,0 +1,30 @@
+body {
+    background-color: #a1dcff;
+	font-family: helvetica, sans-serif;
+	font-size: 16px;
+	text-align: justify;
+}
+			
+.buttons {
+	background-color: #a1dcff;
+	border: none;
+	font-size: 24px;
+    text-align: center;
+}
+			
+.buttons:hover {
+    background-color: #82d1ff;
+}
+			
+.hasil:hover {
+	background-color: #82d1ff;
+	width: auto;
+}
+			
+.tile {
+	margin-top: 20px;
+}
+			
+.tile:hover {
+	font-size: 18px;
+}

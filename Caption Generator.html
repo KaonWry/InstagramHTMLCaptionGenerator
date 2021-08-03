@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Caption generator</title>
+		<title>
+			Caption generator
+		</title>
+		<script src="js.js"></script>
+		<link rel="stylesheet" href="css.css">
 	</head>
 	<body>
-		Caption</br>
-		<input type=text id="judul"></br>						<!-- Get the caption -->
-		<!-- 
-		Day <br/>
-		<input type=number id="hari"></br> 						Unused, I'm using automation now
-		 -->
-		Sauce</br>
-		<input type=text id="sumber"></br><br/> 					<!-- Get the source -->
-		<input type=button onclick="jalankan()" value="Run the Program">		<!-- The action button -->
-		<br/><br/>
-		<div id="hasil"><div/>
-		<script src="js.js">
-		</script>
+		<input type=button onclick=runcopy("writeNori") value="Run and copy the main account captions" class=buttons>
+		<input type=button onclick=runcopy("writeSecond") value="Run and copy the backup account captions" class=buttons><br>
+		<br>
+		<span class=tile>
+			Caption: <input type=text id="judul">
+		</span><br>
+		<br>
+		<span class=tile>
+			Sauce: <input type=text id="sumber">
+		</span><br>
+		<br>
+		<div class=hasil id=writeResult>
+		</div>
 	</body>
-</html
+</html>
