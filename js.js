@@ -15,7 +15,13 @@ function runcopy(idName)
 	var datepast = new Date(2021, 1, 14);										//Get 1st post date
 	var daypast = Math.round((datepast.getTime() / (1000 * 60 * 60 * 24)));		//Count the nearest rounding of the 1st post's milliseconds
 	var dayspan = daynow - daypast;												//Get the timespan in days
-	var tags = ["#jojo", "#jojosbizarreadventure", "#anime", "#jjba", "#jojomemes", "#manga", "#memes", "#jotarokujo", "#jojokes", "#jojobizarreadventure", "#meme", "#giornogiovanna", "#stardustcrusaders", "#josephjoestar", "#ventoaureo", "#diamondisunbreakable", "#animememes", "#diobrando", "#josukehigashikata", "#goldenwind", "#jotaro", "#dankmemes", "#funny", "#battletendency", "#stoneocean", "#josuke", "#jojoedit", "#jojonokimyounabouken", "#jonathanjoestar", "#kakyoin", "#jjbamemes", "#jojos", "#joestar", "#giorno", "#jojolion", "#mistaguido", "#jonathan", "#jjbagoldenwind", "#jojostoneocean", "#steelballrun", "#johnnyjoestar", "#jojomeme", "#jojoke", "#jjbameme", "#animememe"] ;
+	var tags = ["#jojo", "#jojosbizarreadventure", "#anime", "#jjba", "#jojomemes", "#manga", "#memes", "#jotarokujo", "#jojokes",
+				"#jojobizarreadventure", "#meme", "#giornogiovanna", "#stardustcrusaders", "#josephjoestar", "#ventoaureo",
+				"#diamondisunbreakable", "#animememes", "#diobrando", "#josukehigashikata", "#goldenwind", "#jotaro", "#dankmemes",
+				"#funny", "#battletendency", "#stoneocean", "#josuke", "#jojoedit", "#jojonokimyounabouken", "#jonathanjoestar",
+				"#kakyoin", "#jjbamemes", "#jojos", "#joestar", "#giorno", "#jojolion", "#mistaguido", "#jonathan",
+				"#jjbagoldenwind", "#jojostoneocean", "#steelballrun", "#johnnyjoestar", "#jojomeme", "#jojoke", "#jjbameme",
+				"#animememe"] ;
 	function shuffle(array) {													//The clusterfuck up here is the tags i use
 	var m = array.length, t, i;
 	while (m) {
