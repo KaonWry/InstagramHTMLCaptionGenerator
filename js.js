@@ -4,11 +4,11 @@ function runcopy(idName)
 	var sauce = document.getElementById("sumber").value;						//Get the source
 	if (sauce.includes ("u/") == true)											//Check if source have the Reddit "u/" user tag
 	{
-		completesauce = sauce;												//If there's any, then write with no change
+		completesauce = sauce;													//If there's any, then write with no change
 	}
 	else
 	{
-		completesauce = "u/" + sauce;										//If there's none, add "u/" user tag
+		completesauce = "u/" + sauce;											//If there's none, add "u/" user tag
 	}
 	var datenow = new Date();													//Get today's date
 	var daynow = Math.round((datenow.getTime() / (1000 * 60 * 60 * 24)));		//Count the nearest rounding of the today's milliseconds
@@ -45,7 +45,7 @@ function runcopy(idName)
     }
 																				//Check if the textbox is empty or not
     
-	if (captions.length == 0 || sauce.length == 0) {
+	else if (captions.length == 0 || sauce.length == 0) {
         writeCaption = "Bruh check again. Something is missing." ;
     }
 	
@@ -53,11 +53,12 @@ function runcopy(idName)
 		if (selector == "writeNori") {
 			writeCaption = captions + "<br/><br/>" + "Day " + dayspan + " of posting everyday</br><br/>" + "If you like it, please consider to like the post and follow @noriakithecherryboi<br/><br/>" + "Sauce: " + completesauce + "<br/><br/>" + write_tags ;
 			copyCaption = captions + "\n\n" + "Day " + dayspan + " of posting everyday\n\n" + "If you like it, please consider to like the post and follow @noriakithecherryboi\n\n" + "Sauce: " + completesauce + "\n\n" + write_tags ;
-    }																			//Write the caption based on ID parameter
+		}
+																				//Write the caption based on ID parameter
 		if (selector == "writeSecond"){
 			writeCaption = captions + "<br/><br/>" + "If you like it, please consider to check out my main account, @noriakithecherryboi<br/><br/>" + "Sauce: " + completesauce + "<br/><br/>" + write_tags ;
 			copyCaption = captions + "\n\n" + "If you like it, please consider to check out my main account, @noriakithecherryboi\n\n" + "Sauce: " + completesauce + "\n\n" + write_tags ;
-    }
+		}
 	}
 	
 	document.getElementById("writeResult").innerHTML = writeCaption	;			//Write the caption made
