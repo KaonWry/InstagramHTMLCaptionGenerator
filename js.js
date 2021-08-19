@@ -2,9 +2,15 @@ function runcopy(idName)
 	{
 	var captions = document.getElementById("judul").value; 						//Get captions
 	var sauce = document.getElementById("sumber").value;						//Get the source
-	if (sauce.includes ("u/") == true)											//Check if source have the Reddit "u/" user tag
+	if (sauce.includes ("/") == true)											
 	{
-		completesauce = sauce;													//If there's any, then write with no change
+		if (sauce.includes ("u/") == true) {									//If there's "u/" tag, there're no needs to add anything
+            completesauce = sauce ;
+        }
+		else
+		{
+			completesauce = "u" + sauce ;										//If there's only "/" (human error), add "u"
+		}
 	}
 	else
 	{
@@ -14,7 +20,7 @@ function runcopy(idName)
 	var daynow = Math.round((datenow.getTime() / (1000 * 60 * 60 * 24)));		//Count the nearest rounding of the today's milliseconds
 	var datepast = new Date(2021, 1, 14);										//Get 1st post date
 	var daypast = Math.round((datepast.getTime() / (1000 * 60 * 60 * 24)));		//Count the nearest rounding of the 1st post's milliseconds
-	var dayspan = daynow - daypast;												//Get the timespan in days
+	var dayspan = daynow - daypast;												//Get the time span in days
 	var tags = ["#jojo", "#jojosbizarreadventure", "#anime", "#jjba", "#jojomemes", "#manga", "#memes", "#jotarokujo", "#jojokes",
 				"#jojobizarreadventure", "#meme", "#giornogiovanna", "#stardustcrusaders", "#josephjoestar", "#ventoaureo",
 				"#diamondisunbreakable", "#animememes", "#diobrando", "#josukehigashikata", "#goldenwind", "#jotaro", "#dankmemes",
