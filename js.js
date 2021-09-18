@@ -57,8 +57,8 @@ function runcopy(idName)
 	
 	else {
 		if (selector == "writeNori") {
-			writeCaption = captions + "<br/><br/>" + "Day " + dayspan + " of posting everyday</br><br/>" + "If you like it, please consider to like the post and follow @noriakithecherryboi<br/><br/>" + "Sauce: " + completesauce + "<br/><br/>" + write_tags ;
-			copyCaption = captions + "\n\n" + "Day " + dayspan + " of posting everyday\n\n" + "If you like it, please consider to like the post and follow @noriakithecherryboi\n\n" + "Sauce: " + completesauce + "\n\n" + write_tags ;
+			writeCaption = captions + "<br/><br/>" + "Day " + dayspan + " since I started this account</br><br/>" + "If you like it, please consider to like the post and follow @noriakithecherryboi<br/><br/>" + "Sauce: " + completesauce + "<br/><br/>" + write_tags ;
+			copyCaption = captions + "\n\n" + "Day " + dayspan + " since I started this account\n\n" + "If you like it, please consider to like the post and follow @noriakithecherryboi\n\n" + "Sauce: " + completesauce + "\n\n" + write_tags ;
 		}
 																				//Write the caption based on ID parameter
 		if (selector == "writeSecond"){
